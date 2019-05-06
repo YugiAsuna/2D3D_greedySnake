@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.begin{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: calc(50% - 50px);
+    margin-top: 10px;
+    background: #abcdef;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.chess-board{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: calc(50% - 250px);
+    top: 100px;
+    background: lightblue;
+    font-size: 0;
+}
+
+.square{
+    display: inline-block;
+    background: gray;
+    width: 20px;
+    height: 20px;
+    line-height: 0px;
+    box-sizing: border-box;
+    border-left: 1px dashed lightgray;
+    border-top: 1px dashed lightgray;
+}
+
+.ball{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    perspective: 1000px;
+}
+
+.myBall{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    top: 100px;
+}
+
+.circle{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    background-image: radial-gradient(circle at center, white, black);
+    border-radius: 50%;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+.circle span{
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    line-height: 20px;
+    text-align: center;
+    transform-origin: 10px 10px 10px;
+}
+.over-circle{
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    left: -5px;
+    top: -5px;
+    background-image: radial-gradient(circle at center, white, black);
+}
+.shadow{
+    position: absolute;
+    width: 18px;
+    height: 5px;
+    top: 16px;
+    left: 4px;
+    background: #4b4b4b;
+    border-radius: 50%;
+}
